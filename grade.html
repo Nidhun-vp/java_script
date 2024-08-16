@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    mark1=Number(prompt("enter mark1 of student out of 50:"))
+    mark2=Number(prompt("enter mark2 of student out of 50:"))
+    mark3=Number(prompt("enter mark3 of student out of 50"))
+
+    total=mark1+mark2+mark3
+    percentage=(total/150)*100
+    document.write(percentage+"<br>")
+    if(percentage>80)
+{
+    document.write(Number(percentage)+"is you first class with distinction"+"<br>")
+}
+else if(percentage>75 && percentage<=79)
+{
+    document.write(Number(percentage)+"is you first class only"+"<br>")
+}
+else
+{
+    document.write(Number(percentage)+"is you second class "+"<br>")
+}
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

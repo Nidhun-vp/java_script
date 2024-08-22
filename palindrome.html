@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var n = Number(prompt("Enter a number:"));
+    copy=n;
+    var rev = 0;  // Initialize the reverse variable
+    
+    while(n != 0) {
+        var digit = n % 10;
+        rev = rev * 10 + digit;
+        n = Math.floor(n / 10);  // Use Math.floor to get the integer part
+    }
+    if(copy==rev)
+    {
+        document.write("The given number " + rev+" is palindrome");
+        
+    }
+    else
+    {
+        document.write("The given number " + rev+" is  not palindrome");
+    }
+    
+    
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

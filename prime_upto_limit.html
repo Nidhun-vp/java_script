@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let lower=1
+        let limit=Number(prompt("enter limit"))
+        for(let i=lower;i<=limit;i++)
+         {
+            if(i>1)
+              {
+                let is_prime=true;
+                for(let j=2;j<i;j++)
+                  { 
+                    if(i%j==0)
+                     {
+                        is_prime=false;
+                        break;
+                     }
+                    
+                  }
+
+              
+              if(is_prime)
+              {
+                document.write(i+"<br>")
+              }
+         }
+        }
+           
+        
+      
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

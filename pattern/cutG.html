@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let limit=20
+        for(let i=0;i<limit;i++)
+      {   
+            for(let j=0;j<limit;j++)
+            
+        {
+            if(i==Math.floor(limit/2)||j==Math.floor(limit/2)||i==0 && j>=(Math.floor(limit/2))||j==0 && i<=(Math.floor(limit/2))||i==limit-1 && j<=(Math.floor(limit/2))||j==limit-1 && i>=(Math.floor(limit/2)))
+            {  
+                console.log(Math.floor(limit/2))
+                document.write("*")
+                
+                
+            }
+            else
+            {
+                document.write("&nbsp&nbsp")
+            }
+        }   
+        document.write("<br>")
+        
+    
+      }
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

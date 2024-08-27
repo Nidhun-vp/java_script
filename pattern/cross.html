@@ -1,0 +1,33 @@
+<script>
+    limit=Number(prompt("enter limit:"))
+for(let i=0;i<limit;i++)
+{   
+for(let j=0;j<limit;j++)
+ {
+    if(i==j || i+j==limit-1)
+
+     { 
+        
+        document.write("*")
+     }
+     else
+     {
+        document.write(" "+"&nbsp")
+     }
+    
+ }
+
+ document.write("<br>")
+
+
+}
+</script>
+<!-- output
+*          *
+ *      *  
+   *  *    
+     *      
+   *  *    
+ *      *  
+*          *
+ -->

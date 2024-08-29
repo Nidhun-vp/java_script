@@ -1,0 +1,40 @@
+<script>
+    let limit=Number(prompt())
+  
+
+            for(let i=0;i<limit;i++)
+            {
+                for(let j=0;j<limit-i;j++) //for space
+                    { 
+            
+                        document.write("&nbsp&nbsp")
+            
+            
+                }
+                for(let k=0;k<(2*i+1);k++) //for star
+                        {
+                            document.write("*")
+                        }
+                        document.write("<br>")
+            
+            }
+
+            for(let i=limit-1;i>=0;i--)
+            {
+                for(let j=0;j<limit-i;j++) //for space
+                    { 
+            
+                        document.write("&nbsp&nbsp")
+            
+            
+                }
+                for(let k=0;k<(2*i+1);k++) //for star
+                        {
+                            document.write("*")
+                        }
+                        document.write("<br>")
+            
+            }
+  
+    
+    </script>

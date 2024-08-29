@@ -1,0 +1,34 @@
+<script>
+    limit=10
+    for(let i=0;i<limit;i++) //for row
+       {
+        for(let j=0;j<i;j++) //for space
+         { 
+
+            document.write("&nbsp&nbsp")
+
+
+       }
+       for(let k=0;k<limit-i;k++) //for star
+            {
+                document.write("*")
+            }
+            document.write("<br>")
+         }
+</script>
+
+<!-- output
+   **********
+    *********
+     ********
+      *******
+       ******
+        *****
+         ****
+          ***
+           **
+            *
+
+
+-->
+

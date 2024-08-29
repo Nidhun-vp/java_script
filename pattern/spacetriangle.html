@@ -1,0 +1,31 @@
+<script>
+    limit=10
+    for(let i=0;i<limit;i++)
+       {
+        for(let j=0;j<limit-i;j++)
+         { 
+
+            document.write("&nbsp&nbsp")
+
+
+       }
+       for(let k=0;k<=i;k++)
+            {
+                document.write("* &nbsp")
+            }
+            document.write("<br>")
+         }
+</script>
+<!-- 
+output
+                    *  
+                  *  *  
+                *  *  *  
+              *  *  *  *  
+            *  *  *  *  *  
+          *  *  *  *  *  *  
+        *  *  *  *  *  *  *  
+      *  *  *  *  *  *  *  *  
+    *  *  *  *  *  *  *  *  *  
+  *  *  *  *  *  *  *  *  *  * 
+-->

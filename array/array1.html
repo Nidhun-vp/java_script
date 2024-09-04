@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr=["apple","orange","pineapple","pappaya","mango"]
+       
+        document.write(arr[3]+"<br>")
+        let cars=["bmw","benz","mahindra","toyota"]
+        document.write(cars[2]+"<br>")
+        cars[2]="hundai"
+        document.write(cars[2]+"<br>")
+        cars[4]="mitubishi"
+        document.write(cars[4]+"<br>")
+        document.write("full array is:"+cars+"<br>")
+        document.write("length of array is:"+cars.length+"<br>")
+        document.write("last element is:"+cars[cars.length-1]+"<br>")
+        //push
+        cars.push('jaguar','tata','kia')
+        document.write("after push:"+cars+"<br>")
+        arr.unshift("avocado")
+        document.write("after unshift or adding at begin:"+arr+"<br>")
+        //pop
+        arr.pop()
+        document.write("after pop:"+arr+"<br>")
+        arr.shift()
+        document.write("after shift or remove first element:"+arr+"<br>")
+       document.write("the index of toyota is:"+cars.indexOf('toyota')+"<br>")
+       document.write("the index of toyota is:"+cars.indexOf('testla')+"<br>")
+       arr.push('apple')
+       document.write(arr+'<br>')
+       document.write("the index of apple  search start from index one:"+arr.indexOf('apple',1)+"<br>")
+       document.write("the includes is:"+arr.includes('orange')+"<br>")
+       let fruit=arr.slice(1,4)//slice(start,end) set upt to 3
+       document.write("new slice array is:"+fruit+",<br>")
+       let fruit2=arr.slice(3)
+       document.write("new slice array  start from index 3 is:"+fruit2+"<br>")
+       document.write("old  array   is:"+arr)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

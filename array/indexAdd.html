@@ -1,0 +1,21 @@
+<script>
+    
+    limit=Number(prompt("enter limit:"))
+    arr=[]
+    for(let i=0;i<limit;i++)
+    {
+        let a=Number(prompt("enter"+i+"th value:"))
+        arr.push(a)
+    }
+
+   let index=Number(prompt("enter index"))
+   let value=Number(prompt("enter value"))
+   arr[index]=value
+   document.write("Adding success at index "+index+" value is:"+value+"<br>")
+   document.write("the new array is:"+arr)
+
+
+
+
+
+</script>

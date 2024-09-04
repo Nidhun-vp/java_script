@@ -1,0 +1,30 @@
+<script>
+    let flag=true
+    places=['TRIVANDRUM','KOCHI','CALICUT','MALAPPURAM','WAYANAD','THRISSUR']
+    value=prompt("enter your place in uppercase!")
+    for(i=0;i<places.length;i++)
+     {
+        if(value==places[i])
+          {
+            flag=false
+            document.write("found at location "+i+" value is:"+places[i]+"<br>")
+          }
+         
+    }
+          
+          if(flag==false)
+            {
+                 document.write("search operation success"+"<br>")
+            }
+            else
+            {
+                document.write("Invalid Entry"+"<br>")
+            }
+            
+
+     
+
+
+
+
+</script>

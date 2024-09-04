@@ -1,0 +1,15 @@
+<script>
+    limit=Number(prompt("enter limit:"))
+    arr=[]
+    for(let i=0;i<limit;i++)
+    {
+        let a=Number(prompt("enter"+i+"th value:"))
+        arr.push(a)
+    }
+   let middle=parseInt(limit/2)
+   let value=Number(prompt("enter the value to add middle index is"+middle+"<br>"))
+   arr[middle]=value
+   document.write("Adding success<br>")
+   document.write("the new array is:"+arr)
+
+</script>

@@ -1,0 +1,28 @@
+<script>
+       a=["N","I","H","N","D","H","U","N","V","P"]
+       let count=0
+       let flag=false
+       var value=prompt("enter letter you want to search:")
+       for(let i=0;i<a.length;i++)
+          {
+                if(value==a[i])
+                {
+                 flag=true
+                    count+=1
+                    index=i
+                    
+                }
+                
+            
+         
+          }
+           
+          if(flag==true)
+            {
+            document.write("the letter "+a[index]+" repeated "+count+" times")
+            }
+            else
+            {
+                document.write("invalid")
+            }
+</script>

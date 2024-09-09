@@ -1,0 +1,65 @@
+<script>
+    
+    pos_name={
+        0:"ones",
+        1:"tens",
+        2:"hundreds",
+        3:"thousands",
+        4:"ten thousands",
+        5:"lakh",
+        6:"ten lakh",
+        7:"crore",
+        8:"ten crore",
+        9:"billion"
+    }
+
+    Num_name={
+        0:"zero",
+        1:"one",
+        2:"two",
+        3:"three",
+        4:"four",
+        5:"five",
+        6:"six",
+        7:"seven",
+        8:"eight",
+        9:"Nine"
+    }
+    let result=" "
+    let number=prompt()
+    let len=number.length-1
+    let limit=len+1
+    
+    document.write(number+"<br>")
+
+    for(let i=0;i<limit;i++)
+    {
+        let k=number[i]
+        document.write("K is:"+k+"<br>")
+        let a=Num_name[k]
+        document.write("A is:"+a+"<br>")
+        console.log(i)
+        console.log(a)
+        result+=" "+a+' '+pos_name[len]
+        len--
+        
+
+
+
+    }
+    document.write(`the value corrsedponding to ${number} is ${result}`)
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</script>

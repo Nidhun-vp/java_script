@@ -1,0 +1,42 @@
+<script>
+
+        let person={
+        firstName:"john",
+        lastName:"alen",
+        place:"calicut",
+        no:789646444,
+        address:{
+            street:"house 37 near sm street",
+            city:"Kozhikode",
+            state:"kerala",
+            pin:676304
+
+        },
+        greet:function()
+              { 
+                console.log("Hello,"+this.firstName);
+
+              }
+     }
+
+
+   
+     
+     document.write(person.lastName+"<br>")
+     document.write(person.no+"<br>")
+     console.log(person['place'])
+     document.write(person['lastName']+"<br>")
+     document.write(person.address.state+"<br>")
+     document.write(delete person.no)
+     console.log(person)
+     console.log(person.greet())
+     person.place="ernakulam"
+     document.write("<br>"+person.place)
+
+     
+    
+
+
+
+
+</script>

@@ -1,0 +1,21 @@
+<script>
+let count=0
+//let txt=prompt("enter a string")
+let txt=" this is happens every year that"
+let a=txt.split(" ")
+console.log(a)
+//document.write(a)
+ for(let i=0;i<a.length;i++)
+   {
+    let b=a[i][0]
+    console.log(b)
+    if(b==="t"||b==="T")
+   {
+        count=count+1
+     }
+
+ }
+ document.write(`the count of given text ${txt} is ${count}`)
+
+
+</script>

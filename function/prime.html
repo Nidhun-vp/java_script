@@ -1,0 +1,40 @@
+<script>
+    let flag=true
+      function prime(n)
+{
+
+    for(let i=2;i<=(Math.floor(n/2));i++)
+    {
+            if(num%i==0)
+        { 
+        flag=false
+        break;
+        }
+        else
+        {
+            flag=true
+        }
+
+
+    }
+
+
+    if(flag==true)
+    {
+        document.write(`the given number ${num} is prime`)
+    }
+    else
+    {
+        document.write(`the given number ${num} NOT is prime`)
+    }
+
+x
+
+}
+num=Number(prompt())
+output=prime(num)
+document.write(output)
+
+
+
+</script>

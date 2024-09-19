@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function focusEvent()
+        {
+            document.getElementById("input1").style.background="aqua";
+        }
+        function focusEvent2()
+        {
+            document.getElementById("input1").style.background="red";
+        }
+        function focusEvent3()
+        {
+            document.getElementById("input2").style.background="green";
+        }
+        function focusEvent4()
+        {
+            document.getElementById("input2").style.background="violet";
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+    <input type="text" id="input1" onfocus="focusEvent()" onblur="focusEvent2()">
+    <input type="text" id="input2" onfocus="focusEvent3()" onblur="focusEvent4()">
+    
+    
+</body>
+</html>

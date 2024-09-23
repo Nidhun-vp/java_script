@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printvalue()
+        {
+            var name=Number(document.form1.name.value)
+            if(name>=18)
+             {
+                alert("yeah"+name+"are eligible for vote")
+             }
+             else
+             {
+                alert("yeah:"+name+"is not eligible for vote")
+             }
+
+            
+        }
+    </script>
+    <form action  name="form1">
+        enter age:
+        <input type="text" name="name"/>
+        <input type="button" onclick="printvalue()" value="print name">
+
+    
+    </form>
+</body>
+</html>

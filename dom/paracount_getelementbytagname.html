@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByTagName</title>
+</head>
+<body>
+    <script>
+        function countpara()
+        {
+            var totalpara=document.getElementsByTagName("p")
+            alert(totalpara.length)
+        }
+    </script>
+    <p>this a paragraph1</p><br>
+    <p>this a paragraph2</p><br>
+    <p>this a paragraph3</p><br>
+    <p>this a paragraph4</p><br>
+    <p>last paragraph</p>
+    <button onclick="countpara()"> count paragraph</button>
+    
+</body>
+</html>

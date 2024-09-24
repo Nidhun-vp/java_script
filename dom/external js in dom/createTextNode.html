@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+      
+      let paragraph1=document.createTextNode("this content is created using textNode")
+      document.body.appendChild(paragraph1)
+
+      document.write("<br>")
+
+
+      let paragraph2=document.createTextNode("this content is created using textNode.Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque obcaecati quisquam, porro fugit, tempora accusamus")
+      document.body.appendChild(paragraph2)
+      let div=document.createElement("div")
+      div.innerHTML="<br>this is div created using"
+      document.body.appendChild(div)
+      div.id='div1';//set id for div tag
+      let a=document.querySelectorAll('#div1')
+      console.log(a)//div can shown in 
+
+    </script>
+    
+</body>
+</html>

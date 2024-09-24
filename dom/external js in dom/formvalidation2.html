@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validateform()
+        {
+            var name=document.myform.name.value
+            var password1=document.myform.password1.value
+            var password2=document.myform.password2.value
+            var age=document.myform.age.value
+  
+
+                    if(name.length<=6||name==null)
+                    {
+                        alert("Name has atleast 6 character")
+                        return false//not submit form
+                    }
+                    
+                    else if(age<=18 || age>=35)
+                    {
+                        alert("age must  between 18-35 ")
+                        return false
+
+                    }
+                    else if(password1!=password2)
+                    {
+                        alert("there is no match between passwords")
+                        return false
+                    }
+            
+        }
+    </script>
+
+    <form  name="myform" onsubmit="return validateform()">
+        Name:
+        <input type="text" name="name"><br>
+        age:
+        <input type="text" name="age"><br>
+        password:
+        <input type="password" name="password1"><br>
+        confirm password:
+        <input type="password" name="password2">
+        <input type="submit" value="register">
+
+
+
+    </form>
+</body>
+</html>

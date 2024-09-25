@@ -1,0 +1,29 @@
+<script>
+   let msg='education is the most powerful weapon which you can use to change the world.'
+   let a=msg.split(" ")
+   let longestwordLength=0
+   let smallestwordlength=a.length
+   for(let i=0;i<a.length;i++)
+   {
+   if(a[i].length>longestwordLength)
+      {
+        longestwordLength=a[i].length
+        index1=i
+      }
+    if(a[i].length<smallestwordlength)
+      {
+        smallestwordlength=a[i].length
+        index2=i
+
+      }
+
+   } 
+   document.write(`the longest substring  in the sentence is :<b>${a[index1]}</b><br>`)
+   document.write(`the smallest substring in the sentence is: <b>${a[index2]}<b>`)
+
+
+
+
+
+
+</script>

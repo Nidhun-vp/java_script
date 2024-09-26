@@ -1,0 +1,38 @@
+<script>
+
+function slidemax(k,arr)
+{
+    let result=[]
+
+for(let i=0;i<arr.length-k+1;i++)
+{
+    let max=arr[i]
+    for(let j=i;j<i+k+1;j++)
+    {
+        if(max<arr[j])
+        { 
+            max=arr[j]
+        }
+          
+         
+    }
+    result.push(max)
+   
+
+}
+document.write("maxarray is:"+result)
+}
+
+
+let k=Number(prompt("enter value of k:"))
+let array=[2,1,4,3,6,8,7,0,5]
+slidemax(k,array)
+
+
+
+
+
+
+
+
+</script>

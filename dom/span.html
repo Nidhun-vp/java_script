@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nameInput">
+    <button id="showNamebutton" type="submit">click</button>
+    <span id="displayName"></span>
+<script>
+    document.getElementById('showNamebutton').addEventListener('click',function(){
+        let name=document.getElementById('nameInput').value;
+        document.getElementById('displayName').textContent=name
+    })
+</script>    
+</body>
+</html>

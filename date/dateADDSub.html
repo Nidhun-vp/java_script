@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let currentdate=new Date('2023-12-16T12:30:00')
+        document.write(currentdate+"<br>")//  Sat Dec 16 2023 12:30:00 GMT+0530 (India Standard Time)
+        currentdate.setDate(currentdate.getDate()+7)
+        document.write(currentdate+"<br>")//Sat Dec 23 2023 12:30:00 GMT+0530 (India Standard Time)
+
+        //adding month
+        currentdate.setMonth(currentdate.getMonth()+1)
+        document.write(currentdate+"<br>")//Tue Jan 23 2024 12:30:00 GMT+0530 (India Standard Time)
+
+         //substracting hours
+         currentdate.setHours(currentdate.getHours()-2)
+         document.write(currentdate+"<br>")//Tue Jan 23 2024 10:30:00 GMT+0530 (India Standard Time)
+        
+       
+
+    </script>
+</body>
+</html>

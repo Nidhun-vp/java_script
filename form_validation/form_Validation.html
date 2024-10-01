@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form validation</h2>
+    <form id="myForm" method="post" name="f1">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <span id="nameError" class="error"></span><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <span id="emailError" class="error"></span><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age"><br>
+        <span id="ageError" class="error"></span><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <span id="phoneError" class="error"></span><br>
+    
+    <button type="submit" id="submitBtn">submit</button>
+    </form>
+    <script src="form_validation.js"></script>
+</body>
+</html>

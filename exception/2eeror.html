@@ -1,0 +1,22 @@
+<script>
+   function twoerror(num)
+{
+    if(num==10)
+    {
+        throw new Error(`${num} is not illegal for this operation <br>`)
+               
+    }
+    return `hello,${num}`
+}
+try
+{
+    num=Number(prompt())
+    document.write(twoerror(num))
+}catch(error)
+{
+    document.write("error:",error.message,'<br>')
+}
+finally{
+    document.write("execution completed"+'<br>')
+}
+</script>

@@ -1,0 +1,21 @@
+<script>
+function greet(name)
+{
+    if(!name)
+    {
+        throw new error("name is required to greet someone")
+               
+    }
+    return `hello,${name}`
+}
+try
+{
+    document.write(greet())
+}catch(error)
+{
+    document.write("error:",error.message)
+}
+
+
+
+</script>

@@ -1,0 +1,50 @@
+<html>
+<script>
+//set not allow repeated values
+    let set1=new Set
+    set1.add(1)
+    set1.add('abhi')
+    set1.add('abhy')
+    set1.add('ram')
+    set1.add('ram')
+    set1.add('ram')
+    set1.add('ram')
+    console.log(set1)
+
+    //
+     admissionDesk=new Array
+        admissionDesk.push('1000')
+        admissionDesk.push('1001')
+        admissionDesk.push('1002')
+        console.log(admissionDesk)
+
+
+      studentarray=new  Array()
+      studentarray.push('thhhh')
+      studentarray.push('thhhh')
+      studentarray.push('thhhh')
+      studentarray.push('ml')
+      console.log(studentarray)
+      setArray=new Set(studentarray)//convert array into set
+      console.log(setArray)
+      let set2=new Set
+       set2.add('ram')
+       set2.add('tina')
+       set2.add('ram')
+       set2.add('tina')
+      //intersection
+      set3=new Set(set1.intersection(set2))
+      console.log(set3)
+      //union
+      set4=new Set(set1.union(set2))
+      console.log(set4)
+      set5=new Set(set1.difference(set2))
+      console.log(set5)
+      set3.clear()
+      console.log(set3)
+      
+      
+</script>
+
+
+</html>

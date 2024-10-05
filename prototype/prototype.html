@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const person=function(name,yob){
+    this.name=name;
+    this.yob=yob;
+    this.printname=function(){
+        return `I am ${this.name} and year of birth is ${this.yob}`
+        
+    };
+};
+  person.prototype.age=function()
+  {
+    return new Date().getFullYear()-this.yob
+  }
+
+let tovino=new person('tovino',2002)
+console.log(tovino.printname()) 
+console.log(tovino.age())   
+
+let harry=new person('Harry',2000)
+console.log(harry.printname()) 
+console.log(harry.age()) 
+
+let alen=new person('alen',2005)
+console.log(alen.printname()) 
+console.log(alen.age()) 
+
+let mery=new person('mery',2003)
+console.log(mery.printname()) 
+console.log(mery.age()) 
+
+
+    </script>
+</body>
+</html>

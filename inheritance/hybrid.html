@@ -1,0 +1,71 @@
+<script>
+class person{
+    constructor(name,age)
+    {
+        this.name=name;
+        this.age=age;//when we create a object constructor automatically works
+
+    }
+    getDetails()
+    {
+        return `Name ${this.name}, Age:${this.age}`;
+
+    }
+}
+//derived class-employee inherits from person
+class Employee extends person{
+    constructor(name,age,employeeId)
+    {
+        super(name,age);//super get data from parent constructor 
+        this.employeeId=employeeId;
+    }
+    getEmployeeDetails()
+    {
+        return ` ${this.getDetails()}, EmployeeId:${this.employeeId}`;
+
+    }
+}
+//derived class-manager inherits from employee
+class Manager extends person
+{
+    constructor(name,age,department)
+    {
+        super(name,age);
+        this.department=department;
+    }
+    getManagerDetails()
+    {
+        return ` ${this.getDetails()}, DepartmentId:${this.department}`;
+
+    }
+}
+
+class intern extends Employee
+{
+    constructor(name,age,employeeId,InternId)
+    {
+        super(name,age,employeeId);//super get data from parent constructor 
+        this.InternId=InternId;
+    }
+
+    getInternDetails()
+    {
+        return ` ${this.getEmployeeDetails()}, InternId:${this.InternId}`;
+
+    }
+
+}
+
+
+const manager=new Manager("john doe",35,"sales");
+console.log(manager.getManagerDetails());
+console.log(manager.getDetails());
+
+const Myemp=new Employee("wilson",25,"E1002");
+console.log(Myemp.getEmployeeDetails());
+console.log(Myemp.getDetails());
+
+const MyIntern=new intern("wolverin",45,"E1004","IN1290");
+console.log(MyIntern.getInternDetails());
+console.log(MyIntern.getDetails());
+</script>

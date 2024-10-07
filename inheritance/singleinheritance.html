@@ -1,0 +1,26 @@
+<script>
+class animal{
+    constructor(name)
+    {
+        this.name=name;
+    }
+    speak()
+    {
+        console.log(`${this.name} make a sound`)
+    }
+
+}
+class Dog extends animal{
+    walk()
+    {
+        console.log(`${this.name} barks`)
+    }
+}
+const myDog= new Dog('buddy')
+myDog.speak();
+myDog.walk();
+
+
+
+
+</script>

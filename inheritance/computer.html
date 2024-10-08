@@ -1,0 +1,66 @@
+<script>
+class computer
+{
+    constructor(processor,ram,storage)
+    {
+        this.processor=processor
+        this.ram=ram
+        this.storage=storage
+    }
+}
+
+class Desktop extends computer
+{
+  getDesktop()
+  {
+    return ` lcd,led,oled,crt and older pcs are under these category`
+  }
+}
+
+class laptop extends computer
+{
+    constructor(processor,ram,storage)
+    {
+        super(processor,ram,storage)
+    }
+    
+}
+
+class crt extends Desktop{
+    
+}
+
+class Gaming extends laptop
+{
+    constructor(processor,ram,storage)
+    {
+        super(processor,ram,storage)
+    }
+    getGaming()
+    {
+        return ` Gaming  Laptop processor is${this.processor} and ram is ${this.ram}`
+    }
+    
+}
+
+
+class Bussiness extends laptop
+{
+    constructor(processor,ram,storage)
+    {
+        super(processor,ram,storage)
+    }
+    getBusiness()
+    {
+        return `  Business Laptop processor is${this.processor} and ram is ${this.ram}`
+    }
+}
+const myBussiness=new Bussiness('i7','8gb')
+console.log(myBussiness.getBusiness())
+
+const myGaming=new Gaming('i9','16gb')
+console.log(myGaming.getGaming())
+
+const mycRt=new crt();
+console.log(mycRt.getDesktop())
+</script>

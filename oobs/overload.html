@@ -1,0 +1,37 @@
+<script>
+
+    class Shape{
+        constructor(options){
+            this.radius=options.radius
+            this.side=options.side
+        }
+
+        calculateArea(){
+            if(this.radius){
+                return Math.PI * this.radius * this.radius
+            }
+            else if(this.side){
+                return this.side* this.side
+            }
+            else{
+                return 0
+            }
+        }
+    }
+    const circle = new Shape({radius:5})
+    const square = new Shape({side:4})
+    const unKnownShape = new Shape({})
+
+    function printArea(shape){
+        const area=shape.calculateArea()
+        if(area===0){
+            console.log("Unknown shape or no area to calculate")
+        }
+        else{
+            console.log(`The area is: ${area}`)
+        }
+    }
+    printArea(circle)
+    printArea(square)
+    printArea(unKnownShape)
+</script>

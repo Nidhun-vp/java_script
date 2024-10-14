@@ -1,0 +1,19 @@
+<script>
+function fetchdata(callback){
+    setInterval(()=>{
+        console.log('Data fetched');
+        callback();
+
+    },2000);
+}
+
+function processData(){
+    console.log('this is an asynchronous callback')
+}
+
+fetchdata(processData);
+
+
+
+
+</script>

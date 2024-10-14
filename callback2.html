@@ -1,0 +1,15 @@
+<script>
+function doTask(callback)
+{
+    console.log("task started");
+    callback();
+    console.log("task completed")
+}
+function mycallback()
+{
+    console.log("callback executed")
+}
+doTask(mycallback);
+
+
+</script>

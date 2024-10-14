@@ -1,0 +1,17 @@
+<script>
+function callme()
+{
+    console.log("i am call back function")
+
+}    
+function greet(name,callback)
+{
+    console.log("hi"+''+name)
+    callback();
+    
+}
+greet("wolverine",callme);
+
+
+
+</script>

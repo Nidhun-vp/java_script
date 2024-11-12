@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function areAnagrams(str1, str2) {
+  // Remove any spaces and convert both strings to lowercase
+  const normalizedStr1 = str1.replace(/\s+/g, '').toLowerCase();
+  const normalizedStr2 = str2.replace(/\s+/g, '').toLowerCase();
+
+  // If the lengths don't match, they can't be anagrams
+  if (normalizedStr1.length !== normalizedStr2.length) {
+    return false;
+  }
+
+  // Sort both strings and compare
+  return normalizedStr1.split('').sort().join('') === normalizedStr2.split('').sort().join('');
+}
+
+// Example usage
+console.log(areAnagrams("listen", "silent")); // Output: true
+console.log(areAnagrams("Hello", "Olelh"));   // Output: true
+console.log(areAnagrams("apple", "pale"));    // Output: false
+
+    </script>
+</body>
+</html>
